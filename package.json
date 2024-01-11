@@ -1,0 +1,26 @@
+{
+  "name": "@bugonly/stacked-sankey-chart",
+  "version": "0.3.0-beta",
+  "description": "",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint --fix \"./src/**/*.ts\"",
+    "build": "rm -rf dist/ && tsc",
+    "prepublish": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "eslint": "^8.28.0",
+    "eslint-config-alloy": "^4.7.0",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "vega": "^5.22.1"
+  }
+}
